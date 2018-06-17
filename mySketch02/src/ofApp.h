@@ -4,7 +4,7 @@
 #include "ofxXmlSettings.h"
 #include <vector>
 
-extern int currentScene; //現在のシーン番号
+extern int currentScene; //現在のシーン番号 グローバル変数
 
 class ofApp : public ofBaseApp{
 
@@ -19,10 +19,8 @@ class ofApp : public ofBaseApp{
         float count;
         float timeout_request; // 5 ~ 10
         float timeout = 5.0; // 25 ~ 50
-        int Scenes; // 3~N
-        int framerate; // 60
+        int Scenes; // 3~N シーン数
+        int framerate; // 60　フレームレイト
         std::vector<int> list_order;
-//        int list_order[];
         int order_index = 0;
-//        int currentScene = 0;
 };

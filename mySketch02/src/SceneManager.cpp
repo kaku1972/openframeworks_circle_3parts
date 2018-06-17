@@ -27,7 +27,7 @@ public:
     };
     
     void draw(){
-//        ofSetWindowTitle("FPS:" + ofToString(ofGetFrameRate()));
+//        ofSetWindowTitle("FPS:" + ofToString(ofGetFrameRate()));　// フレームレイト表示
         elements.at(elementIndex)->draw();
     };
     

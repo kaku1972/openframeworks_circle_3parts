@@ -9,13 +9,14 @@
 #include "ofApp.h"
 
 
-
 SampleSceneElement::SampleSceneElement(){
 }
 
 void SampleSceneElement::draw(){
-    ofSetCircleResolution(64);
+    ofSetCircleResolution(64); // 円の解像度
+    
     if(currentScene==1){
+        // プロダクト1番
 //        ofImage image;
 //        image.load("background.jpg");
 //        image.draw(0, 0);
@@ -46,7 +47,7 @@ void SampleSceneElement::draw(){
         }
 
     }else if (currentScene==2){
-//        ofBackgroundGradient({225,225,225}, {217, 202, 0}, OF_GRADIENT_CIRCULAR);
+        // プロダクト2番
         ofBackground(0, 0, 0);
         ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
         float radius = 150;
@@ -70,10 +71,9 @@ void SampleSceneElement::draw(){
         }
 
     }else if (currentScene==3){
-//        ofEnableBlendMode(ofBlendMode::OF_BLENDMODE_ADD);
+        // プロダクト3番
         ofSeedRandom(39);
         ofBackground(39);
-//        ofBackgroundGradient({225,225,225}, {217, 202, 0}, OF_GRADIENT_CIRCULAR);
         int min_size = 5;
         int max_size = 150;
         int number_of_circle = 20;
